@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-2"></div>
+            <div class="col-8 ibox">
+                <div id="playerbox">
+                    <h2 id="currsong">MUSIC PLAYER</h2>
+                </div>
+                <span id="span1">
+                <select name="playlist" id="list">
+                    <optgroup id="optlist" label="My Playlists">
+                        <option value="RS">Recents</option>
+                    </optgroup>
+                </select>
+                <button id="add" style='font-size:12px;'>ADD &#10133;</button>
+                </span>
+                <span id="span2">
+                <button id="prev" style='font-size:25px;'> &#9194; </button>
+                <button id="play" style='font-size:30px;'> &#9199; </button>
+                <button id="next" style='font-size:25px;'> &#9193; </button>
+                </span>
+                <span id="span3">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <p>Volume: <span id="vol"></span></p>
+                </div>
+                </span>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
